@@ -20,6 +20,11 @@
 		E6F3228E1725826700678247 /* ORGDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F3228D1725826700678247 /* ORGDetailViewController.m */; };
 		E6F322911725826700678247 /* ORGMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6F3228F1725826700678247 /* ORGMasterViewController.xib */; };
 		E6F322941725826700678247 /* ORGDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6F322921725826700678247 /* ORGDetailViewController.xib */; };
+		E6F3229C1725852400678247 /* ORGContainerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F3229B1725852300678247 /* ORGContainerCell.m */; };
+		E6F3229F1725854E00678247 /* ORGContainerCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F3229E1725854E00678247 /* ORGContainerCellView.m */; };
+		E6F322A11725856800678247 /* ORGContainerCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6F322A01725856800678247 /* ORGContainerCellView.xib */; };
+		E6F322AC1726D4DF00678247 /* ORGArticleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F322AB1726D4DE00678247 /* ORGArticleCollectionViewCell.m */; };
+		E6F322AE1726D4F900678247 /* ORGArticleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6F322AD1726D4F700678247 /* ORGArticleCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +47,14 @@
 		E6F3228D1725826700678247 /* ORGDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORGDetailViewController.m; sourceTree = "<group>"; };
 		E6F322901725826700678247 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ORGMasterViewController.xib; sourceTree = "<group>"; };
 		E6F322931725826700678247 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ORGDetailViewController.xib; sourceTree = "<group>"; };
+		E6F3229A1725852300678247 /* ORGContainerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGContainerCell.h; sourceTree = "<group>"; };
+		E6F3229B1725852300678247 /* ORGContainerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGContainerCell.m; sourceTree = "<group>"; };
+		E6F3229D1725854D00678247 /* ORGContainerCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGContainerCellView.h; sourceTree = "<group>"; };
+		E6F3229E1725854E00678247 /* ORGContainerCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGContainerCellView.m; sourceTree = "<group>"; };
+		E6F322A01725856800678247 /* ORGContainerCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ORGContainerCellView.xib; sourceTree = "<group>"; };
+		E6F322AA1726D4DD00678247 /* ORGArticleCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGArticleCollectionViewCell.h; sourceTree = "<group>"; };
+		E6F322AB1726D4DE00678247 /* ORGArticleCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGArticleCollectionViewCell.m; sourceTree = "<group>"; };
+		E6F322AD1726D4F700678247 /* ORGArticleCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ORGArticleCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +109,14 @@
 				E6F3228D1725826700678247 /* ORGDetailViewController.m */,
 				E6F3228F1725826700678247 /* ORGMasterViewController.xib */,
 				E6F322921725826700678247 /* ORGDetailViewController.xib */,
+				E6F3229A1725852300678247 /* ORGContainerCell.h */,
+				E6F3229B1725852300678247 /* ORGContainerCell.m */,
+				E6F3229D1725854D00678247 /* ORGContainerCellView.h */,
+				E6F3229E1725854E00678247 /* ORGContainerCellView.m */,
+				E6F322A01725856800678247 /* ORGContainerCellView.xib */,
+				E6F322AA1726D4DD00678247 /* ORGArticleCollectionViewCell.h */,
+				E6F322AB1726D4DE00678247 /* ORGArticleCollectionViewCell.m */,
+				E6F322AD1726D4F700678247 /* ORGArticleCollectionViewCell.xib */,
 				E6F322781725826700678247 /* Supporting Files */,
 			);
 			path = HorizontalCollectionViews;
@@ -173,6 +194,8 @@
 				E6F322881725826700678247 /* Default-568h@2x.png in Resources */,
 				E6F322911725826700678247 /* ORGMasterViewController.xib in Resources */,
 				E6F322941725826700678247 /* ORGDetailViewController.xib in Resources */,
+				E6F322A11725856800678247 /* ORGContainerCellView.xib in Resources */,
+				E6F322AE1726D4F900678247 /* ORGArticleCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +210,9 @@
 				E6F322821725826700678247 /* ORGAppDelegate.m in Sources */,
 				E6F3228B1725826700678247 /* ORGMasterViewController.m in Sources */,
 				E6F3228E1725826700678247 /* ORGDetailViewController.m in Sources */,
+				E6F3229C1725852400678247 /* ORGContainerCell.m in Sources */,
+				E6F3229F1725854E00678247 /* ORGContainerCellView.m in Sources */,
+				E6F322AC1726D4DF00678247 /* ORGArticleCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +343,7 @@
 				E6F322991725826700678247 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
