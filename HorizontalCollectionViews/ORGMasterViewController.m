@@ -87,7 +87,7 @@
     [self.tableView registerClass:[ORGContainerCell class] forCellReuseIdentifier:@"ORGContainerCell"];
 
     // Add observer that will allow the nested collection cell to trigger the view controller select row at index path
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didSelectItemFromCollectioNView:) name:@"didSelectItemFromCollectioNView" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didSelectItemFromCollectionView:) name:@"didSelectItemFromCollectionView" object:nil];
 
 }
 
@@ -99,7 +99,7 @@
 
 - (void)dealloc
 {
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"didSelectItemFromCollectioNView" object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"didSelectItemFromCollectionView" object:nil];
 }
 
 #pragma mark - Table View
@@ -132,6 +132,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    // This code is commented out in order to allow users to click on the collection view cells.
 //    if (!self.detailViewController) {
 //        self.detailViewController = [[ORGDetailViewController alloc] initWithNibName:@"ORGDetailViewController" bundle:nil];
 //    }
@@ -161,7 +162,7 @@
 
 #pragma mark - NSNotification to select table cell
 
-- (void) didSelectItemFromCollectioNView:(NSNotification *)notification
+- (void) didSelectItemFromCollectionView:(NSNotification *)notification
 {
     NSDictionary *cellData = [notification object];
     if (cellData)

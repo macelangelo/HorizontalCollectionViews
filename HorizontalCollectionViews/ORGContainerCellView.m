@@ -67,11 +67,8 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     NSDictionary *cellData = [self.collectionData objectAtIndex:[indexPath row]];
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"didSelectItemFromCollectioNView" object:cellData];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"didSelectItemFromCollectionView" object:cellData];
 }
 
-- (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
-    // TODO: Deselect item
-}
 
 @end
