@@ -10,24 +10,12 @@
 #import "ORGArticleCollectionViewCell.h"
 #import <QuartzCore/QuartzCore.h>
 
-@interface ORGContainerCellView () <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
-@property IBOutlet UIView *view;
+@interface ORGContainerCellView () <UICollectionViewDataSource, UICollectionViewDelegate>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (strong, nonatomic) NSArray *collectionData;
 @end
 
 @implementation ORGContainerCellView
-
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self)
-    {
-        // Initialization code.
-        [[NSBundle mainBundle] loadNibNamed:@"ORGContainerCellView" owner:self options:nil];
-    }
-    return self;
-}
 
 - (void)awakeFromNib {
 
@@ -85,12 +73,5 @@
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
     // TODO: Deselect item
 }
-
-//
-//#pragma mark - UICollectionViewDelegateFlowLayout
-//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-//    CGSize retval = CGSizeMake(130.0, 170.0);
-//    return retval;
-//}
 
 @end
