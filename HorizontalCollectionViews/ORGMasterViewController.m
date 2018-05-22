@@ -12,7 +12,7 @@
 #import "ORGContainerCellView.h"
 
 @interface ORGMasterViewController ()
-@property (weak, nonatomic) UITableView *tableView;
+//@property (weak, nonatomic) UITableView *tableView;
 @property (strong, nonatomic) NSArray *sampleData;
 @end
 
@@ -85,6 +85,8 @@
 
     // Register the table cell
     [self.tableView registerClass:[ORGContainerCell class] forCellReuseIdentifier:@"ORGContainerCell"];
+
+  [self.tableView setAllowsSelection: NO];
 
     // Add observer that will allow the nested collection cell to trigger the view controller select row at index path
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didSelectItemFromCollectionView:) name:@"didSelectItemFromCollectionView" object:nil];
